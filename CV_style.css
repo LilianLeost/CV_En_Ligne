@@ -1,0 +1,173 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(28, 28, 28);
+    color: whitesmoke;
+    
+}
+
+.home {
+
+    height: 100vh;
+    
+    
+
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    clip-path:ellipse(45% 39%)
+}
+
+.icone_fleche {
+    display: block;
+    padding-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48px;
+
+
+}
+.name h1 {
+    text-align: center;
+    font-size: 3em;
+    color: whitesmoke;
+   
+}
+
+.name h2 {
+    text-align: center;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+#presentation {
+
+    height: 100vh;
+    
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.container h3 {
+    font-size: 3.2em;
+}
+
+
+.skill ul li {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+.skill {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 30%;
+    background-color: rgba(255,255 ,255 ,0.2);
+    border-radius: 20px;
+
+
+}
+.skill ul li .skill_name {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.skill ul li .skill_name {
+    width: 60px;
+  }
+
+.skill_progress {
+    width: 70%;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+  }
+  
+.skill_per {
+    width: 15%;
+  }
+  
+.skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+  }
+
+
+/*Timeline scolaire*/
+.school {
+    text-align: center;
+    grid-column: 2;
+    margin-top: 30%;
+    background-color: rgba(255,255 ,255 ,0.2);
+    border-radius: 20px;
+}
+.school ul li {
+    list-style-type: none;
+}
+
+.school .date {
+    font-size: 2em;
+    font-weight: bold;
+}
+.school .formation {
+    font-weight: bold;
+    color: #009fd9;
+}
+
+/*Timeline professionelle*/
+.work {
+    text-align: center;
+    grid-column: 3;
+    margin-top: 30%;
+    background-color: rgba(255,255 ,255 ,0.2);
+    border-radius: 20px;
+}
+.work ul li {
+    list-style-type: none;
+}
+.work .date {
+    font-size: 2em;
+    font-weight: bold;
+}
+.work .formation {
+    font-weight: bold;
+    color: #009fd9;
+}
+
+.contact {
+
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+@media screen and (max-width : 1024px)
+{
+ 
+    .container {
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
